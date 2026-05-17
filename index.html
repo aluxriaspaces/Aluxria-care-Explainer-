@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Aluxria Care — Financier Explainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --limestone: #F7F2E8;
+    --forest-pine: #354C3A;
+    --evergreen: #233328;
+    --terrain: #998D7A;
+    --pure-white: #ffffff;
+
+    --bg: var(--limestone);
+    --ink: var(--evergreen);
+    --ink-soft: #4a5950;
+    --ink-on-dark: #f0ead9;
+    --rule: #cbc3b3;
+    --rule-soft: #e1d9c8;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #d8d2c4;
+    color: var(--ink);
+    font-family: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10.25pt;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h1, h2, h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 14mm auto;
+    background: var(--bg);
+    box-shadow: 0 4px 24px rgba(35, 51, 40, 0.18);
+    position: relative;
+    page-break-after: always;
+    overflow: hidden;
+  }
+  .page:last-of-type { page-break-after: auto; }
+
+  /* ============ FOREST PINE HERO BAND ============ */
+  .hero {
+    background: var(--forest-pine);
+    color: var(--ink-on-dark);
+    padding: 12mm 17mm 11mm 17mm;
+    position: relative;
+  }
+
+  .hero .masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 9pt;
+    padding-bottom: 6pt;
+    border-bottom: 0.5pt solid rgba(247, 242, 232, 0.28);
+  }
+  .hero .brand {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+    letter-spacing: 0.32em;
+    color: var(--limestone);
+  }
+  .hero .brand .tag {
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 7.5pt;
+    letter-spacing: 0.16em;
+    color: var(--terrain);
+    text-transform: uppercase;
+    margin-top: 3pt;
+  }
+  .hero .doc-meta {
+    text-align: right;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7.5pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    line-height: 1.6;
+  }
+
+  .hero .label {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.75pt;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin-bottom: 8pt;
+  }
+  .hero h1 {
+    font-size: 16.5pt;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--limestone);
+    max-width: 170mm;
+    margin-bottom: 6pt;
+    letter-spacing: -0.012em;
+  }
+  .hero .deck {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 9pt;
+    color: rgba(247, 242, 232, 0.78);
+    max-width: 168mm;
+    line-height: 1.5;
+  }
+
+  /* ============ BODY AREA (LIMESTONE) ============ */
+  .body-area {
+    padding: 0 17mm 10mm 17mm;
+    background: var(--bg);
+  }
+
+  .section-label {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.75pt;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--forest-pine);
+    margin-top: 11pt;
+    margin-bottom: 4pt;
+  }
+
+  /* ============ THREE VERIFICATION LEGS ============ */
+  /* Sit overlapping the hero band, white cards with strong Forest Pine treatment */
+  .legs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4mm;
+    margin: -22pt 17mm 0 17mm;
+    position: relative;
+    z-index: 2;
+  }
+  .leg {
+    background: var(--pure-white);
+    border-top: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(35, 51, 40, 0.10);
+  }
+  .leg .cap {
+    background: var(--forest-pine);
+    padding: 9pt 11pt 10pt 11pt;
+    color: var(--limestone);
+  }
+  .leg .cap .num {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--limestone);
+    margin-bottom: 6pt;
+  }
+  .leg .cap .who {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terrain);
+  }
+  .leg.statutory .cap {
+    background: var(--evergreen);
+  }
+  .leg .body {
+    padding: 8pt 11pt 10pt 11pt;
+  }
+  .leg .body h3 {
+    font-size: 10.5pt;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 4pt;
+    color: var(--evergreen);
+  }
+  .leg .body p {
+    margin: 0;
+    font-size: 8.25pt;
+    line-height: 1.45;
+    color: var(--ink-soft);
+  }
+
+  /* ============ LIFESPAN BAND ============ */
+  .lifespan { margin: 6pt 0 0 0; }
+  .lifespan-bar {
+    position: relative;
+    height: 56pt;
+    margin-top: 10pt;
+  }
+  .axis {
+    position: absolute;
+    left: 0; right: 0;
+    top: 26pt;
+    height: 0.6pt;
+    background: var(--evergreen);
+  }
+  .bar { position: absolute; top: 22pt; height: 8pt; }
+  .bar.warranty { background: var(--forest-pine); left: 0; width: 14%; }
+  .bar.extended { background: var(--terrain); left: 14%; width: 6%; }
+  .bar.care {
+    background: repeating-linear-gradient(90deg, var(--evergreen) 0 1pt, transparent 1pt 6pt);
+    left: 0; width: 100%; top: 38pt; height: 2pt;
+  }
+  .tick {
+    position: absolute; top: 20pt;
+    width: 0.6pt; height: 12pt;
+    background: var(--ink-soft);
+  }
+  .tick .lbl {
+    position: absolute; top: 14pt; left: 50%;
+    transform: translateX(-50%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7.25pt;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .tick.trade { background: var(--forest-pine); }
+  .tick.trade .lbl { color: var(--forest-pine); font-weight: 600; }
+  .band-legend {
+    display: flex;
+    gap: 16pt;
+    margin-top: 12pt;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7.75pt;
+    color: var(--ink-soft);
+    flex-wrap: wrap;
+  }
+  .band-legend .sw {
+    display: inline-block;
+    width: 14pt; height: 6pt;
+    margin-right: 5pt;
+    vertical-align: middle;
+  }
+  .band-legend .sw.w { background: var(--forest-pine); }
+  .band-legend .sw.e { background: var(--terrain); }
+  .band-legend .sw.c {
+    background: repeating-linear-gradient(90deg, var(--evergreen) 0 1pt, transparent 1pt 4pt);
+    height: 2pt; margin-bottom: 2pt;
+  }
+
+  /* ============ KEY FIGURES STRIP (EVERGREEN) ============ */
+  .figures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--evergreen);
+    margin: 10pt 17mm 0 17mm;
+    color: var(--limestone);
+  }
+  .fig {
+    padding: 9pt 12pt 10pt 12pt;
+    border-right: 0.4pt solid rgba(247, 242, 232, 0.15);
+  }
+  .fig:last-child { border-right: 0; }
+  .fig .v {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18pt;
+    line-height: 1;
+    color: var(--limestone);
+    letter-spacing: -0.01em;
+  }
+  .fig .v .unit {
+    font-size: 9pt;
+    color: var(--terrain);
+    margin-left: 2pt;
+    font-weight: 400;
+  }
+  .fig .k {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 7.25pt;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin-top: 5pt;
+  }
+
+  /* ============ PAGE 2 — STATUTORY FOUNDATION (EVERGREEN) ============ */
+  .statutory-foundation {
+    background: var(--evergreen);
+    color: var(--limestone);
+    padding: 9pt 14pt 10pt 14pt;
+    margin: 7pt 17mm 0 17mm;
+  }
+  .statutory-foundation .sub {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.25pt;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin-bottom: 4pt;
+  }
+  .statutory-foundation h2 {
+    font-size: 12pt;
+    font-weight: 500;
+    color: var(--limestone);
+    margin-bottom: 5pt;
+  }
+  .statutory-foundation p.lead {
+    font-size: 8.75pt;
+    color: rgba(247, 242, 232, 0.82);
+    line-height: 1.5;
+    margin: 0 0 7pt 0;
+    max-width: 165mm;
+  }
+  .statutory-foundation .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14pt;
+    padding-top: 6pt;
+    border-top: 0.4pt solid rgba(247, 242, 232, 0.18);
+  }
+  .statutory-foundation .row .col h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.5pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin: 0 0 4pt 0;
+  }
+  .statutory-foundation .row .col p {
+    font-size: 8.25pt;
+    color: rgba(247, 242, 232, 0.85);
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  /* ============ PAGE 2 COMPONENT BLOCKS ============ */
+  .substance {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3mm 5mm;
+    margin: 5pt 17mm 0 17mm;
+  }
+  .block { border-top: 1.5pt solid var(--forest-pine); padding-top: 4pt; }
+  .block h2 { font-size: 10.75pt; font-weight: 500; margin-bottom: 3pt; line-height: 1.22; color: var(--evergreen); }
+  .block .sub {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--forest-pine);
+    margin-bottom: 3pt;
+  }
+  .block p { margin: 0 0 3pt 0; font-size: 8.5pt; line-height: 1.45; color: var(--ink-soft); }
+  .block ul { margin: 0; padding-left: 11pt; font-size: 8.25pt; color: var(--ink-soft); line-height: 1.4; }
+  .block ul li { margin-bottom: 1pt; }
+
+  .weights {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2pt;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 8.25pt;
+  }
+  .weights td {
+    padding: 1.75pt 0;
+    border-bottom: 0.3pt solid var(--rule-soft);
+    color: var(--ink-soft);
+  }
+  .weights td.pct {
+    text-align: right;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    color: var(--forest-pine);
+    width: 38pt;
+  }
+
+  /* ============ CLOSING + COLOPHON ============ */
+  .closing-band {
+    background: var(--forest-pine);
+    color: var(--limestone);
+    padding: 7pt 17mm 7pt 17mm;
+    margin-top: 5pt;
+  }
+  .closing-wrap { page-break-inside: avoid; }
+  .closing-band .text {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 9.25pt;
+    line-height: 1.4;
+    color: var(--limestone);
+    max-width: 170mm;
+  }
+  .colophon {
+    background: var(--evergreen);
+    padding: 6pt 17mm 6pt 17mm;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--terrain);
+  }
+
+  /* Page 2 hero: shorter, since substance leads */
+  .hero.compact { padding: 8mm 17mm 6mm 17mm; }
+  .hero.compact h1 { font-size: 13.5pt; }
+
+  @media print {
+    body { background: white; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: auto;
+      min-height: auto;
+    }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============== PAGE 1 ============== -->
+<section class="page">
+
+  <div class="hero">
+    <div class="masthead">
+      <div class="brand">
+        ALUXRIA
+        <span class="tag">Luxury Spaces in All Places</span>
+      </div>
+      <div class="doc-meta">
+        Aluxria Care &nbsp;·&nbsp; Financier Explainer<br>
+        Version 1.3 &nbsp;·&nbsp; Page 1 of 2<br>
+        aluxria.com
+      </div>
+    </div>
+
+    <div class="label">A certified, registered, tradable asset class</div>
+    <h1>Every Aluxria cabin is a certified building under the National Construction Code, registered with the local government authority, and stewarded for 50 years under the Aluxria Care framework.</h1>
+    <div class="deck">The Care framework does not invent a new standard — it wraps a structured ownership, condition and resale architecture around an existing statutory certification. Two independent layers verify the asset without reference to the manufacturer; a third documents its life.</div>
+  </div>
+
+  <div class="legs">
+
+    <div class="leg statutory">
+      <div class="cap">
+        <div class="num">01</div>
+        <div class="who">Independent statutory layer</div>
+      </div>
+      <div class="body">
+        <h3>NCC certification &amp; Occupation Certificate</h3>
+        <p>The building is signed off by an accredited certifier as compliant with the National Construction Code at the applicable class. An Occupation Certificate is issued by the relevant authority before the asset is brought into use. The same regulatory instrument that certifies every house, hotel and apartment building in Australia — verifiable on the public record, independent of Aluxria.</p>
+      </div>
+    </div>
+
+    <div class="leg statutory">
+      <div class="cap">
+        <div class="num">02</div>
+        <div class="who">Independent public register</div>
+      </div>
+      <div class="body">
+        <h3>Council / LGA fixed-asset register</h3>
+        <p>Each cabin is recorded on the local government authority's fixed-asset register by chassis number, tied to the Occupation Certificate. A third-party public record — the instrument that gives lenders and insurers confidence in titled and registered asset classes. Verifiable without reliance on the manufacturer.</p>
+      </div>
+    </div>
+
+    <div class="leg">
+      <div class="cap">
+        <div class="num">03</div>
+        <div class="who">Manufacturer-issued lifecycle layer</div>
+      </div>
+      <div class="body">
+        <h3>Aluxria Asset Passport &amp; Care Score</h3>
+        <p>Tamper-evident digital identity carried by every cabin from build through resale — manufacture, install, service, upgrade, movement and ownership records. Condition is expressed as a transparent, point-based Care Score, maintained by the Certified Partner Network under independent Standards Board governance. Designed to be underwritable.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="body-area">
+    <div class="section-label">50-year service architecture</div>
+    <div class="lifespan">
+      <div class="lifespan-bar">
+        <div class="axis"></div>
+        <div class="bar warranty"></div>
+        <div class="bar extended"></div>
+        <div class="bar care"></div>
+
+        <div class="tick" style="left:0%"><span class="lbl">Yr 0 · OC issued · LGA registered</span></div>
+        <div class="tick trade" style="left:14%"><span class="lbl">Yr 7 · Std warranty</span></div>
+        <div class="tick" style="left:20%"><span class="lbl">Yr 10 · Extended</span></div>
+        <div class="tick trade" style="left:30%"><span class="lbl">Yr 15 · Trade</span></div>
+        <div class="tick trade" style="left:40%"><span class="lbl">Yr 20 · Trade</span></div>
+        <div class="tick" style="left:60%"><span class="lbl">Yr 30</span></div>
+        <div class="tick" style="left:80%"><span class="lbl">Yr 40</span></div>
+        <div class="tick trade" style="left:100%"><span class="lbl">Yr 50</span></div>
+      </div>
+      <div class="band-legend">
+        <span><span class="sw w"></span>Standard warranty 0–7 yrs</span>
+        <span><span class="sw e"></span>Extended warranty 7–10+ yrs</span>
+        <span><span class="sw c"></span>Continuous Care enrolment 0–50 yrs &nbsp;·&nbsp; transferable on resale</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="figures">
+    <div class="fig">
+      <div class="v">NCC</div>
+      <div class="k">Certified · OC issued</div>
+    </div>
+    <div class="fig">
+      <div class="v">50<span class="unit">yrs</span></div>
+      <div class="k">Service architecture</div>
+    </div>
+    <div class="fig">
+      <div class="v">7→10+<span class="unit">yrs</span></div>
+      <div class="k">Warranty term</div>
+    </div>
+    <div class="fig">
+      <div class="v">Q / 6M / 12M</div>
+      <div class="k">Inspection cadence by tier</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============== PAGE 2 ============== -->
+<section class="page">
+
+  <div class="hero compact">
+    <div class="masthead">
+      <div class="brand">
+        ALUXRIA
+        <span class="tag">Luxury Spaces in All Places</span>
+      </div>
+      <div class="doc-meta">
+        Aluxria Care &nbsp;·&nbsp; Financier Explainer<br>
+        Version 1.3 &nbsp;·&nbsp; Page 2 of 2<br>
+        aluxria.com
+      </div>
+    </div>
+
+    <div class="label">The substance</div>
+    <h1>The statutory layer is fixed. Aluxria Care is the wrap that turns a certified building into a financeable, tradable asset across its full 50-year life.</h1>
+  </div>
+
+  <div class="statutory-foundation">
+    <div class="sub">Component 00 &nbsp;·&nbsp; The foundation the framework wraps</div>
+    <h2>National Construction Code certification</h2>
+    <p class="lead">Every Aluxria cabin is certified under the National Construction Code by an accredited building certifier and brought into use under an Occupation Certificate issued by the consent authority. It is then recorded on the local government authority's fixed-asset register by chassis number. The Aluxria Care framework wraps this existing statutory layer rather than substituting for it — the building is independently certified before any Aluxria-issued document touches it.</p>
+    <div class="row">
+      <div class="col">
+        <h4>Certifier sign-off</h4>
+        <p>Accredited under state-based building practitioner regimes; same regulatory pathway as conventional construction.</p>
+      </div>
+      <div class="col">
+        <h4>Occupation Certificate</h4>
+        <p>Issued by the consent authority before occupation — public record of code compliance.</p>
+      </div>
+      <div class="col">
+        <h4>LGA fixed-asset register</h4>
+        <p>Recorded by chassis number; third-party verifiable; independent of the manufacturer.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="substance">
+
+    <div class="block">
+      <div class="sub">Component 01</div>
+      <h2>Asset Passport</h2>
+      <p>Digital identity carried by every Aluxria asset, physically embedded via QR / NFC at manufacture. Tamper-evident, API-ready, designed for institutional read-access from inception.</p>
+      <ul>
+        <li>Manufacture, engineering, NCC compliance and install records (incl. OC reference)</li>
+        <li>Full service, inspection, upgrade, movement and ownership history</li>
+        <li>Australian data residency; multi-region architecture for export</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="sub">Component 02</div>
+      <h2>Asset Care Score</h2>
+      <p>A transparent, published, point-based measure of stewardship. Cumulative across ownership transfers and weighted by Care tier — condition expressed as a portable, underwritable number.</p>
+      <table class="weights">
+        <tr><td>Scheduled inspections</td><td class="pct">30%</td></tr>
+        <tr><td>Maintenance documentation</td><td class="pct">25%</td></tr>
+        <tr><td>Responsiveness to flags</td><td class="pct">20%</td></tr>
+        <tr><td>Upgrade completion</td><td class="pct">15%</td></tr>
+        <tr><td>Continuity of Care enrolment</td><td class="pct">10%</td></tr>
+      </table>
+    </div>
+
+    <div class="block">
+      <div class="sub">Component 03</div>
+      <h2>Certified Partner Network</h2>
+      <p>The operational backbone. Regional installation, inspection and service capability delivered through a four-stage certification pathway with documented competency milestones.</p>
+      <ul>
+        <li>Certified Installers, Inspectors, Maintenance Partners and Service Coordinators</li>
+        <li>Trainee → Certified → Senior Certified → Regional Service Coordinator</li>
+        <li>Three service pathways calibrated into the Care Score</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="sub">Component 04</div>
+      <h2>Resale, Finance &amp; Insurance Ecosystem</h2>
+      <p>The mechanism that converts Passport data and Care Score into measurable financial value. Built API-first to feed institutional partners directly via authenticated, audited access.</p>
+      <ul>
+        <li>Certified Pre-Owned: re-certified condition, full Passport disclosure, warranty calibrated to Care Score at resale</li>
+        <li>Resale into matching climate and wind-rating regions</li>
+        <li>Lender and insurer APIs: Passport and Care Score referenced in terms and premiums</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="sub">Component 05</div>
+      <h2>Governance &amp; Standards Board</h2>
+      <p>An independent board governs the standards on which the financeability of the asset class depends. Arm's-length from commercial pressure — the structural feature that allows institutional partners to rely on the framework.</p>
+      <ul>
+        <li>Owns the Asset Care Schedule, Care Score methodology and certification curriculum</li>
+        <li>Independent chair; engineering, consumer-advocacy and adjacent-industry representation</li>
+        <li>Annual public reporting; documented dispute resolution and independent review</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="sub">Component 06</div>
+      <h2>Warranty</h2>
+      <p>Seven years standard, extendable to ten or more under higher Care tiers. Eligibility is tied to documented care and causation analysis rather than blanket conditions — defensible under Australian Consumer Law and aligned with how reasonable warranty terms are interpreted by regulators and courts.</p>
+      <ul>
+        <li>Claim assessment runs against Passport service history and current Care Score</li>
+        <li>Dispute pathway via independent Standards Board; outcomes recorded with reasoning</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="closing-wrap">
+    <div class="closing-band">
+      <div class="text">A certified building under the National Construction Code — registered on a public local government register, identified by a manufacturer-issued lifecycle Passport, scored on a transparent condition index, resold through a certified channel, and stewarded under independent governance for fifty years. Three verification layers. One financeable asset class.</div>
+    </div>
+
+    <div class="colophon">
+      <span>Aluxria &nbsp;·&nbsp; aluxria.com &nbsp;·&nbsp; Strategic Foundation v1.3</span>
+      <span>Source: Aluxria Care Complete Framework</span>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
