@@ -32,6 +32,15 @@ evaluation criterion (Capability & Experience, **35%**).
 - *(The 50–60 year aspiration in v1 is not available under the Crown Land Management Act
   in this process and has been removed.)*
 
+## Positioning (calibrated to the adopted Masterplan)
+
+**Not** a luxury resort. We deliver **Council's adopted Masterplan and its economic
+target — ~$2.88M → ~$5.6M/yr (≈ +$2.72M/yr), Council's own business-case figure** —
+faster and to a higher standard, via precision-built modular accommodation. Premium is
+the **yield-enhancing layer**, not the headline. The Masterplan roughly **doubles**
+capacity (139 approved sites → ~300 ambition); we present that as flood-informed,
+approvals-subject *targets*, not entitlements. *(See `03-MASTERPLAN-ANALYSIS.md`.)*
+
 ## Vision (aligned to Council's objectives)
 
 A staged, year-round destination integrating premium modular cabins, modernised caravan/
