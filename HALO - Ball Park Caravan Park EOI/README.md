@@ -24,19 +24,23 @@ optimism.
 
 ---
 
-## Key dates (indicative — confirm against the official EOI pack)
+## Key dates (CONFIRMED — EOI 2026-305)
 
 | Item | Detail | Status |
 |------|--------|--------|
-| EOI submissions close | **5:00pm, Friday 26 June 2026** (NSW time) | ⚠️ Confirm |
-| Today | 30 May 2026 | — |
-| Working window to close | **~4 weeks** | — |
-| Proposed lease term | 21 years, extendable to 30 (subject to Ministerial approval) | ⚠️ Confirm |
-| Indicative works (2020 master plan) | $15–20M | ⚠️ Confirm |
+| EOI open | Friday 15 May 2026 | ✅ |
+| Questions prior to site inspection | Wednesday 27 May 2026 | ⏳ passed |
+| **Site inspection RSVP** to Narelle Donovan | **Friday 29 May 2026** | 🔴 **likely lapsed — request late RSVP now** |
+| **Formal site inspection** (sole viewing) | **Wednesday 3 June 2026, 11:00am**, Bridge Rd, Corowa | 🔴 attend |
+| Final written questions | Wednesday 17 June 2026 | ⏳ |
+| **EOI submissions close** | **5:00pm, Friday 26 June 2026** | 🔴 |
+| Assessment / RFDP invitations | Week of 13–17 July 2026 | — |
+| Lease term | 21 yrs initial; 30 yrs potential (Ministerial approval, **not guaranteed**) | ✅ |
 
-> ⚠️ **Tight timeline.** With ~4 weeks to close, the **#1 priority is obtaining the
-> full EOI package and site plans** (folder `1. Council Documents`). These resolve
-> a large share of the lease, infrastructure and planning questions immediately.
+> 🔴 **Immediate:** the site-inspection RSVP (29 May) has likely passed by a day —
+> email **narelle.donovan@federationcouncil.nsw.gov.au** now to confirm a late RSVP,
+> as the 3 June inspection is the *only* scheduled viewing. Then pull the **Electronic
+> Data Room** documents (Schedule C) from E-Procure. See `01-FINDINGS-LOG.md` §0.
 
 ---
 

@@ -5,53 +5,51 @@ Preliminary investigation checklist. Status key:
 
 Owner column to be assigned. Cross-reference findings in `01-FINDINGS-LOG.md`.
 
+> **Update 30 May 2026:** Official EOI 2026-305 obtained. Many §1–§2 items now
+> confirmed from the primary source (see findings log). Remaining gaps mostly resolve
+> via the **Electronic Data Room** (Schedule C: lease, flood study, financials,
+> occupancy, masterplan) and the **3 June site inspection**.
+
 ---
 
 ## 1. Site ownership & lease structure  → folder `1. Council Documents`
 
 **Land ownership**
-- [ ] Who owns the land — Federation Council freehold, Crown Lands, or mixed?
-- [ ] If Crown land: reserve status, reserve trust manager, Crown Lands consent path
-- [ ] Title / lot & DP references
+- [x] **Mixed tenure** — Crown land (Reserve 80910, Public Recreation, Council-managed) + Council-owned freehold; ~8 ha
+- [x] Crown land path: governed by Crown Land Management Act 2016 + Plan of Management (Ministerial approval sought for 30-yr term)
+- [ ] Title / lot & DP references (confirm from stamped plans / data room)
 
 **Lease terms**
-- [~] Proposed lease term (public: 21 yrs, extendable to 30 — confirm)
-- [ ] Extension options and triggers
-- [ ] Rent structure (base / turnover / CPI)
-- [ ] Revenue-share requirements
-- [ ] Capital investment obligations
-- [ ] Maintenance / handback obligations
+- [x] Term: 21 yrs initial; 30 yrs potential (Ministerial, not guaranteed) — viability required on 21 yrs
+- [ ] Rent structure (base / CPI or fixed %) — **Draft Lease Agreement in data room**
+- [ ] Revenue-share / Council return expectations (note: >$500k return expected on C1–C20 cabins)
+- [x] Capital investment obligations — **lessee responsible for all redevelopment + approvals**
+- [ ] Maintenance / handback obligations — **Draft Lease Agreement in data room** (Stage 2 commits maintenance-fund %)
 
 **Existing agreements**
-- [ ] Existing operator agreement (terms, status)
-- [ ] Existing lease expiry date
-- [ ] Current revenue performance
+- [x] No incumbent private operator — Council direct-manages via labour model
+- [x] Previous long-term lease concluded; 2019–20 remediation removed ~180 non-compliant vans/cabins
+- [ ] Current revenue performance — **Financials + RMS Occupancy Report (FY2025) in data room**
 
 **Required documents**
-- [ ] EOI package
-- [ ] Information memorandum
-- [ ] Site plans
-- [ ] Existing lease documents (if public)
-- [ ] Council reports / minutes discussing the EOI
+- [x] EOI package (2026-305) — filed in `1. Council Documents`
+- [ ] Data room (Schedule C): ATO S68-2026-4513, stamped plans, Masterplan & Business Case (Nov 2019), **Flood Study**, **Draft Lease**, **Financials**, **RMS Occupancy FY2025**
+- [ ] Site plans / Figures 1–3 (within EOI; obtain higher-res from data room)
 
 ---
 
 ## 2. Site analysis  → folder `2. Site Analysis`
 
 **Total site area**
-- [~] Total area (public: ~12 acres / ~4.86 ha — confirm)
-- [ ] Developable area
-- [ ] River frontage length
+- [x] Total area **~8 ha** (mixed tenure); two zones — Operational Footprint (active) + Overflow/Expansion (riverfront, unapproved)
+- [ ] Developable area + river frontage length (quantify at inspection / from plans)
 
-**Existing infrastructure** — counts of:
-- [ ] Powered sites
-- [ ] Unpowered sites
-- [ ] Cabins
-- [ ] Amenities blocks
-- [~] Camp kitchens (public: camp kitchen + 3 sheltered BBQ areas)
-- [ ] Roads
-- [ ] Boat ramps
-- [ ] Jetties
+**Existing infrastructure** — counts (per S68 ATO, 139 sites total):
+- [x] Powered sites: **97** (of 123 camping sites); short-term sites: **20** (16 Council cabins + 4 villa-standard)
+- [x] Council-owned cabins: **20 (C1–C20)**, valued **>$500k** (purchase or lease — must state)
+- [x] Amenity blocks: **4** (variable condition); + camp kitchen, BBQ shelters, office/kiosk, manager's residence
+- [x] Special events: +30 temp sites, 7 days/yr (KVE gathering)
+- [ ] Roads / boat ramp / jetty — confirm at site inspection
 
 **Existing condition** — assessment of: amenities · roads · drainage · landscaping ·
 electrical · sewer · water systems

@@ -1,107 +1,145 @@
 # Findings Log — Ball Park Caravan Park EOI
 
-What we know, where it came from, and what we still need. Last updated **30 May 2026**.
-
-> **Reliability note:** Everything below is from **public/secondary sources**
-> (council media, trade press, the park's own website, listing sites). It is
-> directional only. **Nothing here substitutes for the official EOI package and
-> site plans**, which remain the #1 priority to obtain.
+Last updated **30 May 2026**. **Primary source obtained:** official EOI document
+**2026-305** (filed in `1. Council Documents`, with extracted text). The items below
+are now confirmed from that document unless marked otherwise.
 
 ---
 
-## A. Confirmed-ish from public sources
+## 0. CRITICAL ACTIONS (time-sensitive)
 
-### The opportunity
-- Federation Council (NSW) is running an **Expression of Interest** for a long-term
-  lease to **operate, manage and redevelop** Ball Park Caravan Park, Corowa — a
-  waterfront holiday park on the **Murray River**.
-- Stated council objectives: **modernise visitor facilities, attract investment,
-  grow tourism / visitation, extend stays, strengthen the local economy.**
-- Process expected to take up to ~12 months overall.
+| Priority | Action | Deadline |
+|----------|--------|----------|
+| 🔴🔴 | **RSVP the site inspection** to Narelle Donovan (sole viewing opportunity) | **Fri 29 May 2026** — *appears to have just passed; contact her immediately to confirm a late RSVP* |
+| 🔴 | Attend **formal site inspection** | **Wed 3 June 2026, 11:00am**, Bridge Road, Corowa |
+| 🔴 | Access the **Electronic Data Room** via E-Procure and pull all Schedule C docs | ASAP |
+| 🟠 | Submit any **final written questions** to Narelle Donovan (≥7 days before close) | **Wed 17 June 2026** |
+| 🟠 | Lodge EOI via **E-Procure** | **Fri 26 June 2026** |
 
-### Lease (⚠️ confirm against EOI pack)
-- Proposed term **21 years**, extendable to **30 years** subject to **Ministerial
-  approval** — the long term is positioned as central to attracting investment.
-
-### Investment guide (⚠️ confirm)
-- A **2020 master plan** estimated **$15–20M** of works to revitalise the park.
-
-### Deadline (⚠️ confirm)
-- EOI submissions close **5:00pm, Friday 26 June 2026** (NSW time).
-
-### The site / existing offer (⚠️ confirm exact counts)
-- Park spans approximately **12 acres (~4.86 ha)** with mature, leafy trees.
-- Currently appears to be operating **without a private operator** (council managing
-  transition); listed under the **G'Day Parks** network.
-- Accommodation: **powered and non-powered sites** (concrete and gravel), plus
-  **holiday units / cabins** with kitchens and ensuites, sleeping ~4–6.
-- Amenities: **camp kitchen, three sheltered BBQ areas, children's play area.**
-- Exact counts of powered/unpowered sites, cabins, amenities blocks, boat ramp and
-  jetty infrastructure — **not yet established. Need site plans.**
+> ⚠️ Today is 30 May 2026. The site-inspection RSVP date (29 May) has likely lapsed by
+> a day. Because the inspection is the **only** scheduled viewing, email Narelle now
+> to request a late RSVP — don't assume the slot is lost.
 
 ---
 
-## B. Useful context
+## 1. Tenure, land & lease (CONFIRMED)
 
-- **Reflections Holidays** is **not a private operator** — it is a **NSW Crown land
-  manager** operating holiday parks on Crown land, and partners with Aboriginal-owned
-  businesses on cultural experiences. *Relevance:* if Ball Park sits on **Crown land**,
-  this materially affects the lease/consent path and the competitive field — clarify
-  land tenure early (see §1).
-- **NRMA Parks & Resorts** operates 40+ parks nationally; **Discovery, BIG4, G'Day
-  Parks, Hampshire** are other active networks — all potential operator partners or
-  competitors.
-- Regional NSW visitor economy context (yr-end Dec 2025): ~62.8M domestic visitors,
-  $25.0B spend, 84.5M domestic overnight nights — macro tailwind only; **Corowa/
-  Federation-specific data still required** (economy.id Federation page).
+- **Total area ~8 hectares.** Mixed tenure: **Crown land** (Reserve No. **80910**,
+  Public Recreation, managed by Council) **+ Council-owned freehold**.
+- Conducted under the **Local Government Act 1993 (NSW)** and **Crown Land Management
+  Act 2016**.
+- **Two zones:**
+  - **Operational Footprint** (yellow) — currently active accommodation.
+  - **Overflow / Potential Expansion Area** (pink) — premium riverfront; designated
+    **Stage 1** of the 2020 Masterplan for **elevated short-stay cabins** with river
+    views. **Not yet approved for full-time use.**
+- **Lease:** **21-year initial** term; **30-year potential** subject to **Ministerial
+  approval** (Council pursuing via Plan of Management + agency consultation). Models
+  **must be viable on the 21-year term**; treat 30 years as upside.
+- **Proponent must state** whether seeking 21 yrs, 30 yrs, or a proposal **contingent
+  only** on 30 yrs.
+- **Approvals risk:** the **incoming lessee is solely responsible** for all plans,
+  specifications, development consents and regulatory approvals for the overflow area.
+  Council could not issue a **Section 68** approval for the overflow without a design.
+  → Significant development-risk to price in.
+
+## 2. Site, operations & assets (CONFIRMED)
+
+- **S68 (Part F2) Approval to Operate: 139 sites total** —
+  - **Short-term: 20** (16 Council-owned cabins + 4 villa-standard cabins)
+  - **Camping: 123** (incl. **97 powered**)
+  - **Special events:** +30 temporary sites, 7 days/yr (KVE gathering, overflow area)
+- **Remediation 2019–2020:** ~**180 non-compliant** vans/cabins removed (electrical,
+  waste-water, fire safety). Park now on a reduced, compliant footprint under a
+  labour-management model. Survived 2022 floods + pandemic; positioned as a "blank
+  canvas".
+- **Facilities:** 4 amenity blocks (**variable condition**), camp kitchen, BBQ
+  shelters, office/kiosk, manager's residence.
+- **20 Council-owned cabins (C1–C20)**, budget→villa standard, valued **>$500,000**.
+  **Council expects a financial return** — proponent must state intent to **purchase
+  or lease** them.
+
+## 3. Location & context (CONFIRMED)
+
+- Murray River foreshore, Corowa; **~3h15 drive from Melbourne**. "Birthplace of
+  Federation." Near Indigo/King Valley wine regions, **<2h to ski fields**, Lake
+  Mulwala.
+- **>$15M recent precinct investment** *(already spent nearby — NOT the redevelopment
+  capex)*: $12M Corowa Aquatic Centre, 5km+ pathways, river access roads/parking/
+  landscaping, historic asset restoration.
 
 ---
 
-## C. Assumptions register (must confirm before any submission)
+## 4. The EOI ask — what we must respond to
 
-| # | Assumption | Source | Confirm via |
-|---|-----------|--------|-------------|
-| A1 | Lease 21 yrs → 30 yrs (Ministerial) | Trade press / council reporting | EOI pack |
-| A2 | Works ~$15–20M | 2020 master plan (press) | Master plan + EOI pack |
-| A3 | EOI closes 26 Jun 2026, 5:00pm | Trade press | Official EOI notice |
-| A4 | Site ~12 acres | Park website / listings | Site plans / title |
-| A5 | Amenities (camp kitchen, 3 BBQ, playground) | Park website | Site inspection |
-| A6 | No incumbent private operator | Trade press | Council |
+**Stage 1 (now) — address 5 scope items (Item 7), max 10 pages (Schedule B):**
+1. Capacity & Previous Experience
+2. Vision & Accommodation Concept (indicative mix; target segments)
+3. Preliminary Development Approach (look & feel; staging)
+4. Indicative Guest Experience (services; commercial activities e.g. café, hire)
+5. High-Level Financial & Term Preferences (preferred lease term)
 
-> The user has also raised a **50–60 year stewardship lease** as the threshold for
-> the master question. **This exceeds the publicly stated 21→30 yr term.** Whether a
-> longer term is achievable (and under what tenure / Ministerial pathway) is a
-> **critical open question** — flag it directly with Council and Crown Lands.
+**Evaluation weightings (Item 8):**
 
----
+| Criterion | Weight |
+|-----------|--------|
+| 1. Proponent Capability & Experience | **35%** |
+| 2. Vision & Strategic Alignment | **30%** |
+| 3. Concept Innovation & Quality | **20%** |
+| 4. Financial & Commercial Logic | **15%** |
 
-## D. Open gaps — highest priority first
-
-1. **Obtain the official EOI package + information memorandum + site plans.** (#1)
-2. **Confirm land tenure** (Council freehold vs Crown land) — drives everything else.
-3. Confirm lease term, rent/revenue-share and capital obligations.
-4. Site infrastructure counts and condition (sites, cabins, utilities capacity).
-5. Planning controls: zoning, flood planning levels, heritage, setbacks.
-6. River frontage control + floating-accommodation approvability and precedents.
-7. Corowa-specific tourism and occupancy data; regional competitor benchmarking.
+**Process:** Selective tender (s166(b) LG (General) Regs) via **E-Procure**, 3 stages —
+Stage 1 EOI → Stage 2 Request for Detailed Proposals (shortlist only) → Stage 3
+Negotiation. EOI is **not a process contract**; Council has wide discretion.
+**No canvassing** councillors/staff (auto-disqualify); all enquiries in writing to the
+designated officer. Submissions valid **90 days**; probity/confidentiality deeds apply.
 
 ---
 
-## E. Sources consulted (30 May 2026)
+## 5. Strategic flags (read before committing)
 
-- Federation Council — *Council invites EOI to transform Ball Park Caravan Park*
-  (page blocks automated fetch; accessed via search summary).
-- Federation Council — *Council to call for EOI for major redevelopment of Ball Park
-  Caravan Park.*
-- Modern Campground — *Federation Council Opens EOI for Ball Park Caravan Park
-  Redevelopment in Corowa.*
-- Australasian Leisure Management — *Federation Council to seek EOI for redevelopment
-  of Ball Park Caravan Park.*
-- The Border Mail / Daily Advertiser — coverage of the EOI and master plan.
-- ballparkcp.com.au — park website (accommodation & amenities).
-- G'Day Parks / Tripadvisor — listings.
-- economy.id — Federation tourism visitor summary (to be mined).
-- Destination NSW / NSW Govt — regional visitor economy statistics.
+- 🔴 **Lease term vs the master question.** Our internal threshold was a **50–60 year**
+  stewardship lease. The EOI offers **21 years (30 max, not guaranteed)**. A 50–60 yr
+  term is **not on the table**. The go/no-go must be re-tested against 21–30 yrs.
+- 🔴 **Capability is 35% — the heaviest criterion** — and asks for a **proven track
+  record** of operating/redeveloping similar parks, with **references/case studies**.
+  If Aluxria lacks a holiday-park operating history, this is the key competitive gap.
+  Options: (a) partner with an established operator (folder 7), (b) bring verifiable
+  adjacent delivery experience, or (c) assemble a credentialed consortium. **We will
+  not overstate experience** — so this must be solved structurally, not in copy.
+- 🟠 **Development risk sits with the lessee** — overflow-area approvals (DA, S68,
+  Crown/planning) are our responsibility and cost. Price and program accordingly.
+- 🟠 **Council-owned cabins** carry a >$500k return expectation — factor into the
+  commercial offer.
 
-> Full URLs captured in the chat thread; to be saved into `1. Council Documents`
-> alongside the official pack once obtained.
+---
+
+## 6. Schedule C — Electronic Data Room documents to obtain (via E-Procure)
+
+- [ ] a. Approval to Operate — **S68-2026-4513**
+- [ ] b. Stamped Plans — ATO **19.2026.1029.1**
+- [ ] c. **Masterplan & Business Case** (Public, Nov 2019) — *capex/feasibility basis*
+- [ ] d. **Flood Study** — *critical for a Murray River site*
+- [ ] e. **Draft Lease Agreement** — *rent, obligations, handback*
+- [ ] f. **Financials** — *current revenue baseline*
+- [ ] g. **RMS Occupancy Report (FY2025)** — *occupancy baseline*
+
+---
+
+## 7. Corrections to earlier (pre-pack) assumptions
+
+| Was assumed | Confirmed reality |
+|-------------|-------------------|
+| Site ~12 acres | **~8 hectares**, mixed Crown + Council tenure |
+| "$15–20M works needed" | **>$15M already invested in the surrounding precinct**; redevelopment capex is the lessee's to define (see Masterplan/Business Case) |
+| Lease 21→30 yrs | Confirmed, with viability required on 21 yrs |
+| EOI closes 26 Jun 2026 | Confirmed |
+| No incumbent operator | Confirmed — Council direct-manages via labour model |
+
+---
+
+## 8. Key contact
+
+**Narelle Donovan** — Manager Community and Economic Development, Federation Council
+📞 (02) 6033 8999 · ✉️ **narelle.donovan@federationcouncil.nsw.gov.au**
+All EOI communication must go through this single point of contact.
