@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Aluxria — Ball Park Caravan Park, Corowa · Expression of Interest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --limestone: #F7F2E8;
+    --forest-pine: #354C3A;
+    --evergreen: #233328;
+    --terrain: #998D7A;
+    --pure-white: #ffffff;
+
+    --bg: var(--limestone);
+    --ink: var(--evergreen);
+    --ink-soft: #4a5950;
+    --ink-on-dark: #f0ead9;
+    --rule: #cbc3b3;
+    --rule-soft: #e1d9c8;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #d8d2c4;
+    color: var(--ink);
+    font-family: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10.25pt;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h1, h2, h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 14mm auto;
+    background: var(--bg);
+    box-shadow: 0 4px 24px rgba(35, 51, 40, 0.18);
+    position: relative;
+    page-break-after: always;
+    overflow: hidden;
+  }
+  .page:last-of-type { page-break-after: auto; }
+
+  /* ============ FOREST PINE HERO BAND ============ */
+  .hero {
+    background: var(--forest-pine);
+    color: var(--ink-on-dark);
+    padding: 12mm 17mm 11mm 17mm;
+    position: relative;
+  }
+
+  .hero .masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 9pt;
+    padding-bottom: 6pt;
+    border-bottom: 0.5pt solid rgba(247, 242, 232, 0.28);
+  }
+  .hero .brand {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+    letter-spacing: 0.32em;
+    color: var(--limestone);
+  }
+  .hero .brand .tag {
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 7.5pt;
+    letter-spacing: 0.16em;
+    color: var(--terrain);
+    text-transform: uppercase;
+    margin-top: 3pt;
+  }
+  .hero .doc-meta {
+    text-align: right;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7.5pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    line-height: 1.6;
+  }
+
+  .hero .label {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.75pt;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin-bottom: 8pt;
+  }
+  .hero h1 {
+    font-size: 16.5pt;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--limestone);
+    max-width: 170mm;
+    margin-bottom: 6pt;
+    letter-spacing: -0.012em;
+  }
+  .hero .deck {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 9pt;
+    color: rgba(247, 242, 232, 0.78);
+    max-width: 168mm;
+    line-height: 1.5;
+  }
+
+  /* ============ BODY AREA (LIMESTONE) ============ */
+  .body-area {
+    padding: 0 17mm 10mm 17mm;
+    background: var(--bg);
+  }
+
+  .section-label {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.75pt;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--forest-pine);
+    margin-top: 11pt;
+    margin-bottom: 4pt;
+  }
+
+  /* ============ THREE OFFER PILLARS ============ */
+  .legs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4mm;
+    margin: -22pt 17mm 0 17mm;
+    position: relative;
+    z-index: 2;
+  }
+  .leg {
+    background: var(--pure-white);
+    border-top: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(35, 51, 40, 0.10);
+  }
+  .leg .cap {
+    background: var(--forest-pine);
+    padding: 9pt 11pt 10pt 11pt;
+    color: var(--limestone);
+  }
+  .leg .cap .num {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--limestone);
+    margin-bottom: 6pt;
+  }
+  .leg .cap .who {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terrain);
+  }
+  .leg.statutory .cap {
+    background: var(--evergreen);
+  }
+  .leg .body {
+    padding: 8pt 11pt 10pt 11pt;
+  }
+  .leg .body h3 {
+    font-size: 10.5pt;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 4pt;
+    color: var(--evergreen);
+  }
+  .leg .body p {
+    margin: 0;
+    font-size: 8.25pt;
+    line-height: 1.45;
+    color: var(--ink-soft);
+  }
+
+  /* ============ DELIVERY TIMELINE BAND ============ */
+  .lifespan { margin: 6pt 0 0 0; }
+  .lifespan-bar {
+    position: relative;
+    height: 56pt;
+    margin-top: 10pt;
+  }
+  .axis {
+    position: absolute;
+    left: 0; right: 0;
+    top: 26pt;
+    height: 0.6pt;
+    background: var(--evergreen);
+  }
+  .bar { position: absolute; top: 22pt; height: 8pt; }
+  .bar.warranty { background: var(--forest-pine); left: 0; width: 22%; }
+  .bar.extended { background: var(--terrain); left: 22%; width: 18%; }
+  .bar.care {
+    background: repeating-linear-gradient(90deg, var(--evergreen) 0 1pt, transparent 1pt 6pt);
+    left: 0; width: 100%; top: 38pt; height: 2pt;
+  }
+  .tick {
+    position: absolute; top: 20pt;
+    width: 0.6pt; height: 12pt;
+    background: var(--ink-soft);
+  }
+  .tick .lbl {
+    position: absolute; top: 14pt; left: 50%;
+    transform: translateX(-50%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7.25pt;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .tick.trade { background: var(--forest-pine); }
+  .tick.trade .lbl { color: var(--forest-pine); font-weight: 600; }
+  .band-legend {
+    display: flex;
+    gap: 16pt;
+    margin-top: 12pt;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7.75pt;
+    color: var(--ink-soft);
+    flex-wrap: wrap;
+  }
+  .band-legend .sw {
+    display: inline-block;
+    width: 14pt; height: 6pt;
+    margin-right: 5pt;
+    vertical-align: middle;
+  }
+  .band-legend .sw.w { background: var(--forest-pine); }
+  .band-legend .sw.e { background: var(--terrain); }
+  .band-legend .sw.c {
+    background: repeating-linear-gradient(90deg, var(--evergreen) 0 1pt, transparent 1pt 4pt);
+    height: 2pt; margin-bottom: 2pt;
+  }
+
+  /* ============ KEY FIGURES STRIP (EVERGREEN) ============ */
+  .figures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--evergreen);
+    margin: 10pt 17mm 0 17mm;
+    color: var(--limestone);
+  }
+  .fig {
+    padding: 9pt 12pt 10pt 12pt;
+    border-right: 0.4pt solid rgba(247, 242, 232, 0.15);
+  }
+  .fig:last-child { border-right: 0; }
+  .fig .v {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18pt;
+    line-height: 1;
+    color: var(--limestone);
+    letter-spacing: -0.01em;
+  }
+  .fig .v .unit {
+    font-size: 9pt;
+    color: var(--terrain);
+    margin-left: 2pt;
+    font-weight: 400;
+  }
+  .fig .k {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 7.25pt;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin-top: 5pt;
+  }
+
+  /* ============ PAGE 2 — OPPORTUNITY ALIGNMENT (EVERGREEN) ============ */
+  .statutory-foundation {
+    background: var(--evergreen);
+    color: var(--limestone);
+    padding: 9pt 14pt 10pt 14pt;
+    margin: 7pt 17mm 0 17mm;
+  }
+  .statutory-foundation .sub {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.25pt;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin-bottom: 4pt;
+  }
+  .statutory-foundation h2 {
+    font-size: 12pt;
+    font-weight: 500;
+    color: var(--limestone);
+    margin-bottom: 5pt;
+  }
+  .statutory-foundation p.lead {
+    font-size: 8.75pt;
+    color: rgba(247, 242, 232, 0.82);
+    line-height: 1.5;
+    margin: 0 0 7pt 0;
+    max-width: 165mm;
+  }
+  .statutory-foundation .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14pt;
+    padding-top: 6pt;
+    border-top: 0.4pt solid rgba(247, 242, 232, 0.18);
+  }
+  .statutory-foundation .row .col h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.5pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin: 0 0 4pt 0;
+  }
+  .statutory-foundation .row .col p {
+    font-size: 8.25pt;
+    color: rgba(247, 242, 232, 0.85);
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  /* ============ PAGE 2 COMPONENT BLOCKS ============ */
+  .substance {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3mm 5mm;
+    margin: 5pt 17mm 0 17mm;
+  }
+  .block { border-top: 1.5pt solid var(--forest-pine); padding-top: 4pt; }
+  .block h2 { font-size: 10.75pt; font-weight: 500; margin-bottom: 3pt; line-height: 1.22; color: var(--evergreen); }
+  .block .sub {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--forest-pine);
+    margin-bottom: 3pt;
+  }
+  .block p { margin: 0 0 3pt 0; font-size: 8.5pt; line-height: 1.45; color: var(--ink-soft); }
+  .block ul { margin: 0; padding-left: 11pt; font-size: 8.25pt; color: var(--ink-soft); line-height: 1.4; }
+  .block ul li { margin-bottom: 1pt; }
+
+  /* ============ ASSUMPTIONS NOTE ============ */
+  .note {
+    margin: 8pt 17mm 0 17mm;
+    padding: 6pt 11pt;
+    background: var(--pure-white);
+    border-left: 2pt solid var(--terrain);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7.5pt;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+  .note strong {
+    color: var(--forest-pine);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 7pt;
+  }
+
+  /* ============ CLOSING + COLOPHON ============ */
+  .closing-band {
+    background: var(--forest-pine);
+    color: var(--limestone);
+    padding: 7pt 17mm 7pt 17mm;
+    margin-top: 5pt;
+  }
+  .closing-wrap { page-break-inside: avoid; }
+  .closing-band .text {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 9.25pt;
+    line-height: 1.4;
+    color: var(--limestone);
+    max-width: 170mm;
+  }
+  .colophon {
+    background: var(--evergreen);
+    padding: 6pt 17mm 6pt 17mm;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--terrain);
+  }
+
+  /* Page 2 hero: shorter, since substance leads */
+  .hero.compact { padding: 8mm 17mm 6mm 17mm; }
+  .hero.compact h1 { font-size: 13.5pt; }
+
+  @media print {
+    body { background: white; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: auto;
+      min-height: auto;
+    }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============== PAGE 1 ============== -->
+<section class="page">
+
+  <div class="hero">
+    <div class="masthead">
+      <div class="brand">
+        ALUXRIA
+        <span class="tag">Luxury Spaces in All Places</span>
+      </div>
+      <div class="doc-meta">
+        Ball Park Caravan Park, Corowa<br>
+        Expression of Interest &nbsp;·&nbsp; Federation Council<br>
+        aluxria.com
+      </div>
+    </div>
+
+    <div class="label">Murray River tourism redevelopment · Long-term lease</div>
+    <h1>Aluxria proposes to operate, redevelop and steward Ball Park Caravan Park as a premium Murray River destination — precision-built, regeneratively planned, and managed for the full term of the lease.</h1>
+    <div class="deck">Federation Council is seeking a long-term operating and redevelopment partner for an iconic waterfront holiday park. Aluxria brings a delivery-capable model that combines scalable, factory-built accommodation with a structured stewardship framework — designed to realise the Council's master plan ambition on a credible program, with quality, sustainability and community outcomes built in from the outset.</div>
+  </div>
+
+  <div class="legs">
+
+    <div class="leg statutory">
+      <div class="cap">
+        <div class="num">01</div>
+        <div class="who">The accommodation</div>
+      </div>
+      <div class="body">
+        <h3>Precision-built modular cabins</h3>
+        <p>Factory-built to the National Construction Code under controlled quality conditions, then installed on site with minimal disruption to existing operations. Modular delivery compresses the construction program, reduces weather and trade risk, and allows the park to be staged so it can keep trading through redevelopment. Premium accommodation — not a cheap alternative.</p>
+      </div>
+    </div>
+
+    <div class="leg statutory">
+      <div class="cap">
+        <div class="num">02</div>
+        <div class="who">The place</div>
+      </div>
+      <div class="body">
+        <h3>Regenerative waterfront destination</h3>
+        <p>A masterplanned upgrade that respects the river setting and the park's standing in Corowa: improved visitor facilities, landscaping and amenity, energy and water efficiency, and a mix of accommodation that extends the season and the average length of stay. Designed to grow visitation and strengthen the local economy.</p>
+      </div>
+    </div>
+
+    <div class="leg">
+      <div class="cap">
+        <div class="num">03</div>
+        <div class="who">The stewardship</div>
+      </div>
+      <div class="body">
+        <h3>Managed for the full lease term</h3>
+        <p>Every cabin carries the Aluxria Care framework — a digital asset passport, transparent condition scoring and a structured maintenance schedule — so the asset is documented and maintained across decades, not just delivered. Council retains a partner accountable for condition and presentation for the life of the lease.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="body-area">
+    <div class="section-label">Indicative delivery program</div>
+    <div class="lifespan">
+      <div class="lifespan-bar">
+        <div class="axis"></div>
+        <div class="bar warranty"></div>
+        <div class="bar extended"></div>
+        <div class="bar care"></div>
+
+        <div class="tick" style="left:0%"><span class="lbl">Award · planning &amp; approvals</span></div>
+        <div class="tick trade" style="left:22%"><span class="lbl">Stage 1 · early works</span></div>
+        <div class="tick trade" style="left:40%"><span class="lbl">Stage 2 · cabins installed</span></div>
+        <div class="tick" style="left:60%"><span class="lbl">Facilities &amp; amenity</span></div>
+        <div class="tick" style="left:80%"><span class="lbl">Full operation</span></div>
+        <div class="tick trade" style="left:100%"><span class="lbl">Ongoing stewardship · to 21–30 yr term</span></div>
+      </div>
+      <div class="band-legend">
+        <span><span class="sw w"></span>Planning, approvals &amp; early works</span>
+        <span><span class="sw e"></span>Staged modular installation</span>
+        <span><span class="sw c"></span>Continuous Care stewardship across the lease term</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="figures">
+    <div class="fig">
+      <div class="v">21–30<span class="unit">yrs</span></div>
+      <div class="k">Lease term · extension subject to Min. approval</div>
+    </div>
+    <div class="fig">
+      <div class="v">$15–20<span class="unit">M</span></div>
+      <div class="k">Indicative works · 2020 master plan</div>
+    </div>
+    <div class="fig">
+      <div class="v">Staged</div>
+      <div class="k">Park keeps trading through works</div>
+    </div>
+    <div class="fig">
+      <div class="v">26 Jun</div>
+      <div class="k">EOI close · 5:00pm, 2026</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============== PAGE 2 ============== -->
+<section class="page">
+
+  <div class="hero compact">
+    <div class="masthead">
+      <div class="brand">
+        ALUXRIA
+        <span class="tag">Luxury Spaces in All Places</span>
+      </div>
+      <div class="doc-meta">
+        Ball Park Caravan Park, Corowa<br>
+        Expression of Interest &nbsp;·&nbsp; Federation Council<br>
+        aluxria.com
+      </div>
+    </div>
+
+    <div class="label">The proposal in substance</div>
+    <h1>A delivery-capable operator that meets the Council's objectives on a credible program — with quality, sustainability and community value built into the model.</h1>
+  </div>
+
+  <div class="statutory-foundation">
+    <div class="sub">Alignment &nbsp;·&nbsp; What Federation Council is seeking</div>
+    <h2>Modernise the destination · grow tourism · strengthen the local economy</h2>
+    <p class="lead">The Council's stated objectives are to modernise visitor facilities, attract investment, increase visitation and extend stays at a significant Murray River asset. Aluxria's model is built around exactly these outcomes: a staged redevelopment that lifts amenity and accommodation standards while the park keeps trading, delivered by a partner accountable for presentation and condition across the full lease term.</p>
+    <div class="row">
+      <div class="col">
+        <h4>Modernise &amp; invest</h4>
+        <p>Precision-built accommodation and upgraded facilities, delivered on a program aligned to the master plan's scope.</p>
+      </div>
+      <div class="col">
+        <h4>Grow visitation</h4>
+        <p>A broader accommodation mix and improved amenity to extend the season and lengthen the average stay.</p>
+      </div>
+      <div class="col">
+        <h4>Local economic value</h4>
+        <p>Regional supply, local employment and visitor spend that flows into Corowa and the surrounding district.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="substance">
+
+    <div class="block">
+      <div class="sub">Component 01</div>
+      <h2>Accommodation offer</h2>
+      <p>A staged mix of premium modular cabins and upgraded sites, scaled to the park's layout and the river frontage.</p>
+      <ul>
+        <li>NCC-certified cabins, factory-built under controlled quality conditions</li>
+        <li>Range of cabin types to broaden the market and lift yield</li>
+        <li>Retained and upgraded powered and camping sites</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="sub">Component 02</div>
+      <h2>Regeneration &amp; sustainability</h2>
+      <p>Environmental outcomes tied to operating benefits — lower running costs and a more resilient destination.</p>
+      <ul>
+        <li>Energy- and water-efficient design; solar and storage where viable</li>
+        <li>Landscaping and riverfront amenity that respect the setting</li>
+        <li>Waste, stormwater and flood-aware site planning</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="sub">Component 03</div>
+      <h2>Indigenous partnership</h2>
+      <p>Genuine, collaborative engagement with Traditional Owners and local Aboriginal organisations, shaped through consultation rather than assumed.</p>
+      <ul>
+        <li>Cultural heritage assessment and respectful site interpretation</li>
+        <li>Pathways for training, employment and supply</li>
+        <li>Shared outcomes built on stewardship and cultural integrity</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="sub">Component 04</div>
+      <h2>Workforce &amp; community</h2>
+      <p>Local employment and capability through delivery and operation, with benefits retained in the district.</p>
+      <ul>
+        <li>Local and regional trades engaged through staged works</li>
+        <li>Operational roles in management, housekeeping and grounds</li>
+        <li>Accommodation that can also serve regional workforce demand</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="sub">Component 05</div>
+      <h2>Delivery, compliance &amp; program</h2>
+      <p>A staged approach that keeps the park trading, with planning and approvals managed through the standard NSW pathway.</p>
+      <ul>
+        <li>Development consent and certification via the consent authority</li>
+        <li>Early works first; cabins installed in defined stages</li>
+        <li>Program and milestones reported transparently to Council</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="sub">Component 06</div>
+      <h2>Commercial model &amp; stewardship</h2>
+      <p>A long-term lease structure that aligns Aluxria's investment with Council's return and the asset's condition over time.</p>
+      <ul>
+        <li>Lease and return structure to be agreed with Council</li>
+        <li>Aluxria Care: passport, condition scoring and maintenance schedule</li>
+        <li>Asset documented and maintained to handback standard</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <strong>Assumptions to confirm</strong><br>
+    Figures and dates shown are drawn from public reporting of the Council's resolution and the 2020 master plan, and are indicative only: lease term of 21 years (extendable to 30 subject to Ministerial approval), indicative works of $15–20M, and an EOI close of 5:00pm Friday 26 June 2026. These, along with site area, site numbers, lease conditions and evaluation criteria, must be verified against the official Expression of Interest documentation before submission. No certifications, approvals, partnerships or financial returns are represented as secured in this document.
+  </div>
+
+  <div class="closing-wrap">
+    <div class="closing-band">
+      <div class="text">A premium Murray River destination, delivered on a credible staged program by a partner accountable for quality, sustainability, community value and the condition of the asset across the full term of the lease. Precision-built accommodation, regenerative design, and long-term stewardship — Luxury Spaces in All Places.</div>
+    </div>
+
+    <div class="colophon">
+      <span>Aluxria &nbsp;·&nbsp; aluxria.com &nbsp;·&nbsp; Ball Park Caravan Park EOI · Positioning Draft</span>
+      <span>Source: public Council reporting · figures indicative</span>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
