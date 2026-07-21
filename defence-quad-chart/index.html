@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aluxria — Defence Capability Quad Chart</title>
+<meta name="description" content="Aluxria defence capability quad chart. Sovereign, First Nations–owned modular construction — rapidly deployable, NCC-certified accommodation and base infrastructure engineered for austere and northern Australian conditions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --limestone: #F7F2E8;
+    --forest-pine: #354C3A;
+    --evergreen: #233328;
+    --terrain: #998D7A;
+    --pure-white: #ffffff;
+    --bg: var(--limestone);
+    --ink: var(--evergreen);
+    --ink-soft: #4a5950;
+    --rule: #cbc3b3;
+    --rule-soft: #e1d9c8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: #d8d2c4;
+    color: var(--ink);
+    font-family: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10pt; line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  h1, h2, h3 { font-family: "DM Sans", sans-serif; font-weight: 500; letter-spacing: -0.01em; color: var(--ink); margin: 0; }
+
+  .sheet {
+    width: 297mm; height: 210mm;
+    margin: 12mm auto;
+    background: var(--bg);
+    box-shadow: 0 4px 24px rgba(35,51,40,0.18);
+    display: flex; flex-direction: column;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  /* ===== HEADER ===== */
+  .qc-head {
+    background: var(--forest-pine);
+    color: var(--limestone);
+    padding: 6mm 10mm 5mm 10mm;
+    display: grid;
+    grid-template-columns: 52mm 1fr 46mm;
+    gap: 8mm;
+    align-items: center;
+  }
+  .qc-head .brand { font-weight: 500; font-size: 15pt; letter-spacing: 0.3em; color: var(--limestone); }
+  .qc-head .brand .tag {
+    display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 400;
+    font-size: 7pt; letter-spacing: 0.16em; color: var(--terrain);
+    text-transform: uppercase; margin-top: 3pt;
+  }
+  .qc-head .title .ey {
+    font-family: "Plus Jakarta Sans", sans-serif; font-weight: 600;
+    font-size: 7.5pt; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--terrain); margin-bottom: 3pt;
+  }
+  .qc-head .title h1 { font-size: 15.5pt; font-weight: 500; color: var(--limestone); line-height: 1.15; letter-spacing: -0.01em; }
+  .qc-head .title p { margin: 3pt 0 0 0; font-size: 8.25pt; color: rgba(247,242,232,0.8); line-height: 1.4; max-width: 150mm; }
+  .qc-head .meta {
+    text-align: right; font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7.25pt; letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--terrain); line-height: 1.65;
+  }
+
+  /* ===== QUAD GRID ===== */
+  .quad {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4mm;
+    padding: 4mm 10mm;
+  }
+  .q {
+    background: var(--pure-white);
+    box-shadow: 0 2px 8px rgba(35,51,40,0.08);
+    display: flex; flex-direction: column;
+    overflow: hidden;
+  }
+  .q .cap {
+    background: var(--forest-pine);
+    color: var(--limestone);
+    padding: 5pt 10pt;
+    display: flex; align-items: baseline; gap: 8pt;
+  }
+  .q.alt .cap { background: var(--evergreen); }
+  .q .cap .n {
+    font-family: "DM Sans", sans-serif; font-weight: 300; font-size: 15pt;
+    line-height: 1; color: var(--terrain); letter-spacing: -0.02em;
+  }
+  .q .cap h2 { font-size: 11pt; font-weight: 500; color: var(--limestone); }
+  .q .cap h2 .sub {
+    display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 500;
+    font-size: 6.5pt; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--terrain); margin-top: 2pt;
+  }
+  .q .in { padding: 7pt 11pt 8pt 11pt; flex: 1; }
+  .q ul { margin: 0; padding-left: 11pt; }
+  .q li { font-size: 8.4pt; line-height: 1.4; color: var(--ink-soft); margin-bottom: 3.5pt; }
+  .q li strong { color: var(--evergreen); font-weight: 600; }
+  .q p.lead { margin: 0 0 5pt 0; font-size: 8.6pt; line-height: 1.42; color: var(--evergreen); font-weight: 500; }
+
+  /* concept graphic in Q1 */
+  .concept { display: flex; align-items: center; gap: 9pt; margin-top: 4pt; }
+  .concept svg { flex: 0 0 auto; }
+  .concept .cnote { font-family: "Plus Jakarta Sans", sans-serif; font-size: 7pt; color: var(--terrain); line-height: 1.5; }
+
+  .spec-inline {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1pt 12pt;
+    margin-top: 4pt; padding-top: 5pt; border-top: 0.5pt solid var(--rule-soft);
+    font-family: "Plus Jakarta Sans", sans-serif; font-size: 7.6pt; color: var(--ink-soft);
+  }
+  .spec-inline b { color: var(--evergreen); font-weight: 600; }
+
+  .tbc { color: var(--terrain); font-style: italic; }
+
+  /* ===== FOOTER ===== */
+  .qc-foot {
+    background: var(--evergreen);
+    color: var(--terrain);
+    padding: 4mm 10mm;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7.5pt; letter-spacing: 0.05em;
+  }
+  .qc-foot .pillars { color: var(--limestone); font-weight: 500; letter-spacing: 0.02em; }
+  .qc-foot .pillars span { color: var(--terrain); margin: 0 5pt; }
+  .qc-foot .cx { text-align: right; text-transform: uppercase; letter-spacing: 0.14em; line-height: 1.6; }
+
+  @media print {
+    body { background: white; }
+    .sheet { margin: 0; box-shadow: none; width: auto; height: auto; }
+    @page { size: A4 landscape; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<section class="sheet">
+
+  <!-- HEADER -->
+  <div class="qc-head">
+    <div class="brand">ALUXRIA<span class="tag">Luxury Spaces in All Places</span></div>
+    <div class="title">
+      <div class="ey">Defence Capability · Sovereign Australian industry</div>
+      <h1>Deployable modular accommodation &amp; base infrastructure</h1>
+      <p>Sovereign, First Nations–owned modular construction for Defence — rapidly deployable, NCC-certified, and engineered for austere, remote and northern Australian conditions.</p>
+    </div>
+    <div class="meta">
+      Capability Quad Chart<br>
+      2026<br>
+      aluxria.com
+    </div>
+  </div>
+
+  <!-- QUADRANTS -->
+  <div class="quad">
+
+    <!-- Q1 CAPABILITY -->
+    <div class="q">
+      <div class="cap"><span class="n">01</span><h2>The capability<span class="sub">What we deliver</span></h2></div>
+      <div class="in">
+        <p class="lead">Rapidly deployable, relocatable modular buildings — complete facilities, not modules alone.</p>
+        <ul>
+          <li>Accommodation, messing, ablutions, headquarters, medical and training facilities</li>
+          <li>Full site infrastructure — power, water, communal and support buildings</li>
+          <li>Crane-liftable and re-deployable across bases, training areas and remote sites</li>
+        </ul>
+        <div class="concept" aria-hidden="true">
+          <svg width="112" height="52" viewBox="0 0 112 52" fill="none">
+            <!-- ground -->
+            <line x1="2" y1="46" x2="110" y2="46" stroke="#354C3A" stroke-width="1"/>
+            <!-- module 1 -->
+            <rect x="8" y="26" width="30" height="20" stroke="#354C3A" stroke-width="1.2" fill="#F7F2E8"/>
+            <path d="M6 26 L23 16 L40 26" stroke="#354C3A" stroke-width="1.2" fill="none"/>
+            <rect x="18" y="34" width="10" height="12" stroke="#998D7A" stroke-width="1" fill="none"/>
+            <!-- module 2 -->
+            <rect x="44" y="26" width="30" height="20" stroke="#354C3A" stroke-width="1.2" fill="#F7F2E8"/>
+            <path d="M42 26 L59 16 L76 26" stroke="#354C3A" stroke-width="1.2" fill="none"/>
+            <rect x="54" y="34" width="10" height="12" stroke="#998D7A" stroke-width="1" fill="none"/>
+            <!-- solar array -->
+            <path d="M84 22 L104 22 L100 30 L80 30 Z" stroke="#354C3A" stroke-width="1.1" fill="none"/>
+            <line x1="90" y1="22" x2="86" y2="30" stroke="#998D7A" stroke-width="0.8"/>
+            <line x1="97" y1="22" x2="93" y2="30" stroke="#998D7A" stroke-width="0.8"/>
+            <line x1="92" y1="30" x2="92" y2="46" stroke="#354C3A" stroke-width="1"/>
+          </svg>
+          <span class="cnote">Precision-built modules + integrated services — factory-built, site-assembled, relocatable.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2 DEFENCE VALUE -->
+    <div class="q alt">
+      <div class="cap"><span class="n">02</span><h2>Defence value<span class="sub">Why it matters</span></h2></div>
+      <div class="in">
+        <ul>
+          <li><strong>Rapid standup and teardown</strong> — minimal site works; pier / screw-pile founded, no permanent slab, no rezoning</li>
+          <li><strong>Built for austere and northern operations</strong> — BAL-FZ bushfire and cyclone-rated for tropical and remote bases</li>
+          <li><strong>Enduring asset, not a disposable camp</strong> — 50-year design life supports base regeneration and lasting accommodation</li>
+          <li><strong>Estate flexibility</strong> — redeployable to meet surge, exercises and force-posture change</li>
+          <li><strong>HADR-ready</strong> — the same system supports domestic disaster response and community recovery</li>
+          <li><strong>Sustainment reduced</strong> — less reliance on FIFO and temporary leasing; lifecycle managed from day one</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q3 TECHNICAL -->
+    <div class="q alt">
+      <div class="cap"><span class="n">03</span><h2>Technical approach<span class="sub">Specification &amp; standards</span></h2></div>
+      <div class="in">
+        <ul>
+          <li><strong>NCC-certified</strong> Class 1, 2 &amp; 3 — S70 and S40 modular building systems</li>
+          <li><strong>BAL-FZ</strong> (flame zone) and <strong>cyclone-rated</strong> envelopes; engineered for Australian extremes</li>
+          <li>Crane-liftable, pier / screw-pile foundations — fully relocatable and re-deployable</li>
+          <li>Solar microgrid, rainwater capture and water management ready for off-grid sites</li>
+          <li>Digitally gated factory QA; each unit carries an Aluxria Care Asset Passport and Care Score</li>
+        </ul>
+        <div class="spec-inline">
+          <span><b>Production</b> to 100 units / month</span>
+          <span><b>Capacity</b> 20 to 400+ beds</span>
+          <span><b>Design life</b> 50+ years</span>
+          <span><b>Warranty</b> 7 yrs, to 10+</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4 DELIVERY & SOVEREIGNTY -->
+    <div class="q">
+      <div class="cap"><span class="n">04</span><h2>Delivery &amp; sovereignty<span class="sub">Credentials &amp; contact</span></h2></div>
+      <div class="in">
+        <ul>
+          <li><strong>Sovereign, First Nations–owned</strong> — aligns with the Commonwealth Indigenous Procurement Policy (IPP) and Australian Industry Capability (AIC)</li>
+          <li><strong>Supply Nation registered</strong> Indigenous business</li>
+          <li>Delivered through the First Nations–led <strong>HALO Village Delivery Consortium</strong> — principal contractor, engineering &amp; prefabrication, civil &amp; infrastructure</li>
+          <li>Staged quarterly delivery; 5–6 year program capability</li>
+          <li>Defence security &amp; quality credentials (DISP membership, ISO 9001): <span class="tbc">to confirm</span></li>
+        </ul>
+        <div class="spec-inline">
+          <span><b>ABN</b> <span class="tbc">to confirm</span></span>
+          <span><b>Web</b> aluxria.com</span>
+          <span style="grid-column:1 / -1;"><b>Contact</b> <span class="tbc">name / email / phone to confirm</span></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="qc-foot">
+    <div class="pillars">Sovereign industrial capability<span>·</span>First Nations–owned<span>·</span>NCC-certified<span>·</span>Rapidly deployable</div>
+    <div class="cx">Aluxria &nbsp;·&nbsp; aluxria.com &nbsp;·&nbsp; Defence Capability Quad Chart 2026<br>Cost &amp; schedule provided on request</div>
+  </div>
+
+</section>
+
+</body>
+</html>
