@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aluxria — Capability Statement · ICN</title>
+<meta name="description" content="Aluxria capability statement. A First Nations–led modular construction business delivering precision-built, NCC-certified accommodation for renewable energy, resources, government infrastructure and community housing across Australia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --limestone: #F7F2E8;
+    --forest-pine: #354C3A;
+    --evergreen: #233328;
+    --terrain: #998D7A;
+    --pure-white: #ffffff;
+
+    --bg: var(--limestone);
+    --ink: var(--evergreen);
+    --ink-soft: #4a5950;
+    --ink-on-dark: #f0ead9;
+    --rule: #cbc3b3;
+    --rule-soft: #e1d9c8;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #d8d2c4;
+    color: var(--ink);
+    font-family: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10.25pt;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h1, h2, h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 14mm auto;
+    background: var(--bg);
+    box-shadow: 0 4px 24px rgba(35, 51, 40, 0.18);
+    position: relative;
+    page-break-after: always;
+    overflow: hidden;
+  }
+  .page:last-of-type { page-break-after: auto; }
+
+  /* ============ FOREST PINE HERO BAND ============ */
+  .hero {
+    background: var(--forest-pine);
+    color: var(--ink-on-dark);
+    padding: 10mm 17mm 8mm 17mm;
+    position: relative;
+  }
+  .hero .masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 9pt;
+    padding-bottom: 6pt;
+    border-bottom: 0.5pt solid rgba(247, 242, 232, 0.28);
+  }
+  .hero .brand {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+    letter-spacing: 0.32em;
+    color: var(--limestone);
+  }
+  .hero .brand .tag {
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 7.5pt;
+    letter-spacing: 0.16em;
+    color: var(--terrain);
+    text-transform: uppercase;
+    margin-top: 3pt;
+  }
+  .hero .doc-meta {
+    text-align: right;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7.5pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    line-height: 1.6;
+  }
+  .hero .label {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.75pt;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin-bottom: 8pt;
+  }
+  .hero h1 {
+    font-size: 16.5pt;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--limestone);
+    max-width: 172mm;
+    margin-bottom: 6pt;
+    letter-spacing: -0.012em;
+  }
+  .hero .deck {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 9pt;
+    color: rgba(247, 242, 232, 0.78);
+    max-width: 168mm;
+    line-height: 1.5;
+  }
+
+  /* ============ BODY AREA (LIMESTONE) ============ */
+  .body-area {
+    padding: 0 17mm 0 17mm;
+    background: var(--bg);
+  }
+  .section-label {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.75pt;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--forest-pine);
+    margin-top: 12pt;
+    margin-bottom: 2pt;
+  }
+
+  /* ============ THREE CAPABILITY LEGS ============ */
+  .legs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4mm;
+    margin: -22pt 17mm 0 17mm;
+    position: relative;
+    z-index: 2;
+  }
+  .leg {
+    background: var(--pure-white);
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(35, 51, 40, 0.10);
+  }
+  .leg .cap {
+    background: var(--forest-pine);
+    padding: 7pt 11pt 8pt 11pt;
+    color: var(--limestone);
+  }
+  .leg .cap .num {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--limestone);
+    margin-bottom: 6pt;
+  }
+  .leg .cap .who {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terrain);
+  }
+  .leg.mid .cap { background: var(--evergreen); }
+  .leg .body { padding: 7pt 11pt 8pt 11pt; }
+  .leg .body h3 {
+    font-size: 10.5pt;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 4pt;
+    color: var(--evergreen);
+  }
+  .leg .body p {
+    margin: 0;
+    font-size: 8.25pt;
+    line-height: 1.45;
+    color: var(--ink-soft);
+  }
+
+  /* ============ KEY FIGURES STRIP (EVERGREEN) ============ */
+  .figures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--evergreen);
+    margin: 8pt 17mm 0 17mm;
+    color: var(--limestone);
+  }
+  .fig {
+    padding: 7pt 12pt 7pt 12pt;
+    border-right: 0.4pt solid rgba(247, 242, 232, 0.15);
+  }
+  .fig:last-child { border-right: 0; }
+  .fig .v {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17pt;
+    line-height: 1;
+    color: var(--limestone);
+    letter-spacing: -0.01em;
+  }
+  .fig .v .unit {
+    font-size: 8.5pt;
+    color: var(--terrain);
+    margin-left: 2pt;
+    font-weight: 400;
+  }
+  .fig .k {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 7pt;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin-top: 5pt;
+  }
+
+  /* ============ CAPABILITY BLOCKS ============ */
+  .substance {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2mm 5mm;
+    margin: 4pt 17mm 0 17mm;
+  }
+  .block { border-top: 1.5pt solid var(--forest-pine); padding-top: 4pt; }
+  .block h2 { font-size: 10.75pt; font-weight: 500; margin-bottom: 3pt; line-height: 1.22; color: var(--evergreen); }
+  .block .sub {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--forest-pine);
+    margin-bottom: 3pt;
+  }
+  .block p { margin: 0 0 3pt 0; font-size: 8.5pt; line-height: 1.45; color: var(--ink-soft); }
+  .block ul { margin: 0; padding-left: 11pt; font-size: 8.25pt; color: var(--ink-soft); line-height: 1.4; }
+  .block ul li { margin-bottom: 1pt; }
+
+  /* ============ STATUTORY / FOUNDATION BAND (EVERGREEN) ============ */
+  .foundation {
+    background: var(--evergreen);
+    color: var(--limestone);
+    padding: 9pt 14pt 10pt 14pt;
+    margin: 7pt 17mm 0 17mm;
+  }
+  .foundation .sub {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.25pt;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin-bottom: 4pt;
+  }
+  .foundation h2 { font-size: 12pt; font-weight: 500; color: var(--limestone); margin-bottom: 5pt; }
+  .foundation p.lead {
+    font-size: 8.75pt;
+    color: rgba(247, 242, 232, 0.82);
+    line-height: 1.5;
+    margin: 0 0 7pt 0;
+    max-width: 168mm;
+  }
+  .foundation .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14pt;
+    padding-top: 6pt;
+    border-top: 0.4pt solid rgba(247, 242, 232, 0.18);
+  }
+  .foundation .row .col h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.5pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    margin: 0 0 4pt 0;
+  }
+  .foundation .row .col p {
+    font-size: 8.25pt;
+    color: rgba(247, 242, 232, 0.85);
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  /* ============ SPEC TABLE ============ */
+  .spec {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2pt;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 8.1pt;
+  }
+  .spec td {
+    padding: 2pt 0;
+    border-bottom: 0.3pt solid var(--rule-soft);
+    color: var(--ink-soft);
+    vertical-align: top;
+  }
+  .spec td.k {
+    color: var(--evergreen);
+    font-weight: 500;
+    width: 42%;
+    padding-right: 6pt;
+  }
+
+  /* ============ EXPERIENCE ROWS ============ */
+  .experience { margin: 5pt 17mm 0 17mm; }
+  .exp-row {
+    display: grid;
+    grid-template-columns: 30mm 1fr 34mm;
+    gap: 8pt;
+    padding: 6pt 0;
+    border-bottom: 0.4pt solid var(--rule);
+    align-items: baseline;
+  }
+  .exp-row:first-of-type { border-top: 1.5pt solid var(--forest-pine); }
+  .exp-row .proj {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 9.5pt;
+    color: var(--evergreen);
+  }
+  .exp-row .proj small {
+    display: block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 6.75pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--forest-pine);
+    margin-top: 2pt;
+  }
+  .exp-row .desc { font-size: 8.4pt; color: var(--ink-soft); line-height: 1.45; }
+  .exp-row .status {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terrain);
+    text-align: right;
+  }
+
+  /* ============ CORPORATE DETAILS ============ */
+  .corporate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 18pt;
+    margin: 6pt 17mm 0 17mm;
+    padding-top: 5pt;
+    border-top: 1.5pt solid var(--forest-pine);
+  }
+  .corporate dl { margin: 0; }
+  .corporate .drow {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 6pt;
+    padding: 2.25pt 0;
+    border-bottom: 0.3pt solid var(--rule-soft);
+    font-size: 8.25pt;
+  }
+  .corporate dt {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--forest-pine);
+    align-self: center;
+  }
+  .corporate dd { margin: 0; color: var(--ink-soft); }
+  .tbc { color: var(--terrain); font-style: italic; }
+
+  /* ============ CLOSING + COLOPHON ============ */
+  .closing-band {
+    background: var(--forest-pine);
+    color: var(--limestone);
+    padding: 8pt 17mm 8pt 17mm;
+    margin-top: 6pt;
+  }
+  .closing-wrap { page-break-inside: avoid; }
+  .closing-band .text {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 9.25pt;
+    line-height: 1.42;
+    color: var(--limestone);
+    max-width: 172mm;
+  }
+  .colophon {
+    background: var(--evergreen);
+    padding: 6pt 17mm 6pt 17mm;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terrain);
+  }
+
+  .hero.compact { padding: 8mm 17mm 6mm 17mm; }
+  .hero.compact h1 { font-size: 13.5pt; }
+
+  .note {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 7pt;
+    color: var(--terrain);
+    margin: 5pt 17mm 0 17mm;
+    line-height: 1.45;
+  }
+
+  @media print {
+    body { background: white; }
+    .page { margin: 0; box-shadow: none; width: auto; min-height: auto; }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============== PAGE 1 ============== -->
+<section class="page">
+
+  <div class="hero">
+    <div class="masthead">
+      <div class="brand">
+        ALUXRIA
+        <span class="tag">Luxury Spaces in All Places</span>
+      </div>
+      <div class="doc-meta">
+        Capability Statement<br>
+        Prepared for ICN &nbsp;·&nbsp; 2026<br>
+        aluxria.com
+      </div>
+    </div>
+
+    <div class="label">First Nations–led modular construction</div>
+    <h1>Precision-built, NCC-certified accommodation for Australia's renewable energy, resources, infrastructure and community-housing programs.</h1>
+    <div class="deck">Aluxria designs, manufactures and supplies relocatable modular buildings engineered for a 50-year service life and Australian environmental extremes. We deliver at scale through a First Nations–led consortium, and we steward every asset across its full lifecycle under the Aluxria Care framework — so the accommodation a project pays for becomes durable value for the region that hosts it.</div>
+  </div>
+
+  <div class="legs">
+    <div class="leg">
+      <div class="cap">
+        <div class="num">01</div>
+        <div class="who">What we do</div>
+      </div>
+      <div class="body">
+        <h3>Design &amp; manufacture</h3>
+        <p>Modular accommodation designed and built to the National Construction Code. S70 and S40 systems, BAL-FZ bushfire and cyclone-rated, engineered for remote and regional Australian conditions. Digitally gated factory quality assurance prior to dispatch.</p>
+      </div>
+    </div>
+    <div class="leg mid">
+      <div class="cap">
+        <div class="num">02</div>
+        <div class="who">How we deliver</div>
+      </div>
+      <div class="body">
+        <h3>Supply, install &amp; scale</h3>
+        <p>Crane-liftable, pier and screw-pile foundations — no permanent slab, no rezoning. Staged quarterly delivery aligned to workforce ramp-up. Production capacity to 100 units per month, extendable through consortium partners for large programs.</p>
+      </div>
+    </div>
+    <div class="leg">
+      <div class="cap">
+        <div class="num">03</div>
+        <div class="who">What lasts</div>
+      </div>
+      <div class="body">
+        <h3>Lifecycle stewardship</h3>
+        <p>Every building carries an Aluxria Care Asset Passport and transparent Care Score, backed by a 7-to-10+ year warranty and a 50-year service architecture. Fully relocatable and re-deployable — engineered for reuse across multiple project lifecycles.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="figures">
+    <div class="fig">
+      <div class="v">100<span class="unit">/mo</span></div>
+      <div class="k">Units · production capacity</div>
+    </div>
+    <div class="fig">
+      <div class="v">50<span class="unit">yrs</span></div>
+      <div class="k">Designed service life</div>
+    </div>
+    <div class="fig">
+      <div class="v">BAL-FZ</div>
+      <div class="k">&amp; cyclone rated</div>
+    </div>
+    <div class="fig">
+      <div class="v">NCC</div>
+      <div class="k">Certified · Class 1, 2 &amp; 3</div>
+    </div>
+  </div>
+
+  <div class="body-area">
+    <div class="section-label">Core capabilities</div>
+  </div>
+
+  <div class="substance">
+    <div class="block">
+      <div class="sub">Capability 01</div>
+      <h2>Modular design &amp; engineering</h2>
+      <p>Accommodation, amenities and infrastructure buildings designed for compliance, comfort and durability.</p>
+      <ul>
+        <li>NCC Class 1, 2 and 3 building types</li>
+        <li>S70 and S40 modular systems</li>
+        <li>BAL-FZ and cyclone-rated envelopes</li>
+        <li>Solar microgrid and rainwater-capture ready</li>
+      </ul>
+    </div>
+    <div class="block">
+      <div class="sub">Capability 02</div>
+      <h2>Manufacture &amp; quality</h2>
+      <p>Controlled factory production with documented quality gates — precision, repeatability and schedule certainty.</p>
+      <ul>
+        <li>Up to 100 units per month, single-facility</li>
+        <li>Digitally gated QA prior to dispatch</li>
+        <li>Extendable capacity via consortium partners</li>
+        <li>Australian data residency for asset records</li>
+      </ul>
+    </div>
+    <div class="block">
+      <div class="sub">Capability 03</div>
+      <h2>Delivery &amp; installation</h2>
+      <p>Staged deployment that matches accommodation supply to workforce demand, minimising upfront capital.</p>
+      <ul>
+        <li>Crane-liftable, pier / screw-pile founded</li>
+        <li>No permanent slab, no rezoning required</li>
+        <li>Quarterly staged delivery to ramp-up</li>
+        <li>Full village infrastructure, not modules alone</li>
+      </ul>
+    </div>
+    <div class="block">
+      <div class="sub">Capability 04</div>
+      <h2>Lifecycle &amp; asset care</h2>
+      <p>The Aluxria Care framework wraps a financeable, tradable asset architecture around every building.</p>
+      <ul>
+        <li>Tamper-evident digital Asset Passport</li>
+        <li>Transparent, point-based Care Score</li>
+        <li>7-to-10+ year warranty; 50-year service life</li>
+        <li>Certified Partner Network for service</li>
+      </ul>
+    </div>
+    <div class="block">
+      <div class="sub">Capability 05</div>
+      <h2>Relocation &amp; reuse</h2>
+      <p>Assets engineered to move — redeployed across sites and successive project phases rather than written off.</p>
+      <ul>
+        <li>Fully relocatable, crane-liftable systems</li>
+        <li>Re-deployable to adjacent or new sites</li>
+        <li>Certified Pre-Owned resale pathway</li>
+        <li>Transition to community or key-worker housing</li>
+      </ul>
+    </div>
+    <div class="block">
+      <div class="sub">Capability 06</div>
+      <h2>Indigenous participation</h2>
+      <p>First Nations–led by design, with genuine procurement and workforce outcomes that can be documented.</p>
+      <ul>
+        <li>Supply Nation registered business</li>
+        <li>Local employment and training on delivery</li>
+        <li>First Nations subcontract and service packages</li>
+        <li>Legacy asset pathways to Traditional Owner land</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note">Figures reflect current capability and the HALO Village Delivery Consortium Expression of Interest submitted to Spark Renewables for the Dinawan Energy Hub. Project-specific capacity, timelines and costs are confirmed at scoping stage.</p>
+
+</section>
+
+<!-- ============== PAGE 2 ============== -->
+<section class="page">
+
+  <div class="hero compact">
+    <div class="masthead">
+      <div class="brand">
+        ALUXRIA
+        <span class="tag">Luxury Spaces in All Places</span>
+      </div>
+      <div class="doc-meta">
+        Capability Statement<br>
+        Prepared for ICN &nbsp;·&nbsp; 2026<br>
+        aluxria.com
+      </div>
+    </div>
+
+    <div class="label">Markets, experience &amp; compliance</div>
+    <h1>A single procurement decision that delivers compliant accommodation now and durable regional value after.</h1>
+  </div>
+
+  <div class="foundation">
+    <div class="sub">The organisation</div>
+    <h2>Who Aluxria is</h2>
+    <p class="lead">Aluxria is a First Nations–led modular construction business specialising in precision-built, relocatable accommodation for major Australian projects. We combine controlled factory manufacture with a lifecycle stewardship framework, and we deliver large programs through the First Nations–led HALO Village Delivery Consortium. A significant share of Aluxria's commercial profit funds the HALO Foundation's regional housing and First Nations community programs — commercial delivery and community benefit are structured as a single loop.</p>
+    <div class="row">
+      <div class="col">
+        <h4>Consortium delivery</h4>
+        <p>Modular partner within the HALO Village Delivery Consortium — a First Nations–owned principal contractor, engineering and prefabrication capacity, and specialist civil and renewable-energy infrastructure partners.</p>
+      </div>
+      <div class="col">
+        <h4>Sectors served</h4>
+        <p>Renewable energy, mining and resources, government and social infrastructure, essential-worker and affordable housing, eco-tourism and First Nations community housing.</p>
+      </div>
+      <div class="col">
+        <h4>Geography</h4>
+        <p>Remote and regional Australia. Active engagement across NSW (Hunter, Central West), the Northern Territory and the Northern Rivers, with capability nationwide.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="body-area">
+    <div class="section-label">Products &amp; technical specification</div>
+  </div>
+  <div class="substance">
+    <div class="block">
+      <div class="sub">Building systems</div>
+      <h2>Modular systems</h2>
+      <table class="spec">
+        <tr><td class="k">Systems</td><td>S70 &amp; S40 modular</td></tr>
+        <tr><td class="k">NCC classes</td><td>Class 1, 2 &amp; 3</td></tr>
+        <tr><td class="k">Bushfire</td><td>To BAL-FZ (flame zone)</td></tr>
+        <tr><td class="k">Wind</td><td>Cyclone-rated regions</td></tr>
+        <tr><td class="k">Foundation</td><td>Pier / screw-pile; no slab</td></tr>
+        <tr><td class="k">Relocatable</td><td>Crane-liftable; redeployable</td></tr>
+      </table>
+    </div>
+    <div class="block">
+      <div class="sub">Village scope</div>
+      <h2>What we build</h2>
+      <p>Complete village infrastructure, not accommodation modules alone:</p>
+      <ul>
+        <li>Private dwellings and amenities</li>
+        <li>Dining, kitchen and laundry facilities</li>
+        <li>Gym, wellness and recovery spaces</li>
+        <li>Training rooms and communal buildings</li>
+        <li>Landscaped zones, walking paths, gardens</li>
+        <li>Solar microgrid, rainwater and water management</li>
+      </ul>
+    </div>
+    <div class="block">
+      <div class="sub">Delivery model</div>
+      <h2>Scale &amp; schedule</h2>
+      <table class="spec">
+        <tr><td class="k">Capacity</td><td>20 to 400+ beds demonstrated</td></tr>
+        <tr><td class="k">Production</td><td>To 100 units / month</td></tr>
+        <tr><td class="k">Staging</td><td>Quarterly, to workforce ramp-up</td></tr>
+        <tr><td class="k">Program</td><td>5–6 year durations supported</td></tr>
+        <tr><td class="k">Design life</td><td>50+ years</td></tr>
+        <tr><td class="k">Warranty</td><td>7 years, extendable to 10+</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <p class="note">Products and specifications reflect current standard offerings. Configurations are tailored to site conditions, servicing and client requirements at scoping stage.</p>
+
+</section>
+
+<!-- ============== PAGE 3 ============== -->
+<section class="page">
+
+  <div class="hero compact">
+    <div class="masthead">
+      <div class="brand">
+        ALUXRIA
+        <span class="tag">Luxury Spaces in All Places</span>
+      </div>
+      <div class="doc-meta">
+        Capability Statement<br>
+        Prepared for ICN &nbsp;·&nbsp; 2026<br>
+        aluxria.com
+      </div>
+    </div>
+
+    <div class="label">Experience &amp; corporate details</div>
+    <h1>Delivery experience, compliance and the details a procurement team needs to qualify Aluxria.</h1>
+  </div>
+
+  <div class="body-area">
+    <div class="section-label">Selected experience</div>
+  </div>
+  <div class="experience">
+    <div class="exp-row">
+      <div class="proj">Dinawan Energy Hub<small>NSW · Renewable energy</small></div>
+      <div class="desc">400+ bed workforce village. Expression of Interest submitted to Spark Renewables through the HALO Village Delivery Consortium, with staged quarterly delivery aligned to construction ramp-up.</div>
+      <div class="status">EOI submitted</div>
+    </div>
+    <div class="exp-row">
+      <div class="proj">Windows on the Wetlands<small>NT · Cultural &amp; tourism</small></div>
+      <div class="desc">Custodian-led cultural learning and economic hub on Country, with low-impact accommodation supporting a five-engine operating model. In partnership with the Kennon families, Pudakul and Innovation200.</div>
+      <div class="status">Stage 2 EOI</div>
+    </div>
+    <div class="exp-row">
+      <div class="proj">Vacy Village<small>NSW · Community housing</small></div>
+      <div class="desc">Intergenerational regional village on a Hunter-region site, demonstrating mixed-composition modular community housing and the transition of accommodation into lasting regional assets.</div>
+      <div class="status">In development</div>
+    </div>
+  </div>
+  <p class="note">Project status is stated as at 2026 and reflects Expressions of Interest and partnerships in development. Aluxria participates as the modular design, manufacture and supply partner. Contract value, references and further project detail are available on request.</p>
+
+  <div class="body-area">
+    <div class="section-label">Compliance, quality &amp; corporate details</div>
+  </div>
+  <div class="corporate">
+    <dl>
+      <div class="drow"><dt>Trading name</dt><dd>Aluxria</dd></div>
+      <div class="drow"><dt>Business type</dt><dd>First Nations–led modular construction</dd></div>
+      <div class="drow"><dt>ABN / ACN</dt><dd class="tbc">To confirm</dd></div>
+      <div class="drow"><dt>Supply Nation</dt><dd>Registered <span class="tbc">· reg. no. to confirm</span></dd></div>
+      <div class="drow"><dt>ICN Gateway</dt><dd class="tbc">Registration to confirm</dd></div>
+      <div class="drow"><dt>Registered office</dt><dd class="tbc">To confirm</dd></div>
+    </dl>
+    <dl>
+      <div class="drow"><dt>Building compliance</dt><dd>NCC certified; Occupation Certificate pathway</dd></div>
+      <div class="drow"><dt>Asset governance</dt><dd>Aluxria Care Standards Board (independent)</dd></div>
+      <div class="drow"><dt>Insurances</dt><dd class="tbc">PL / PI / workers comp — to confirm</dd></div>
+      <div class="drow"><dt>Quality &amp; other accreditations</dt><dd class="tbc">To confirm (e.g. ISO)</dd></div>
+      <div class="drow"><dt>Website</dt><dd>aluxria.com</dd></div>
+      <div class="drow"><dt>Enquiries</dt><dd class="tbc">Contact name / email / phone to confirm</dd></div>
+    </dl>
+  </div>
+
+  <div class="closing-wrap">
+    <div class="closing-band">
+      <div class="text">Precision-built modular accommodation, certified under the National Construction Code, delivered at scale through a First Nations–led consortium, and stewarded across a 50-year lifecycle under the Aluxria Care framework. Compliant accommodation for the project. Durable value for the region. One procurement decision.</div>
+    </div>
+    <div class="colophon">
+      <span>Aluxria &nbsp;·&nbsp; aluxria.com &nbsp;·&nbsp; Capability Statement 2026</span>
+      <span>Prepared for the Industry Capability Network</span>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
